@@ -1,0 +1,11 @@
+# Dependency directories
+node_modules/
+node_modules
+
+# media file
+#public/media/icu/pharmleft60.mp4
+#public/media/pharmacy/pharmcenter60.mp4
+#public/media/surgical/pharmright60.mp4
+
+# config.json is here so each machine can maintain identity
+config.json
