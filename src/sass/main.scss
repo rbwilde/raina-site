@@ -1,15 +1,15 @@
 body {
 	width: 1920px;
-    height: 1080px;
-    margin: 0;
-    position: fixed;
-    overflow: hidden;
+  height: 1080px;
+  margin: 0;
+  position: fixed;
+  overflow: hidden;
 }
 html {
 	margin: 0;
-  	padding: 0;
-  	width: 1920px;
-    height: 1080px;
+  padding: 0;
+  width: 1920px;
+  height: 1080px;
 }
 .container {
 	width: 100%;
@@ -17,6 +17,10 @@ html {
 
 button:focus {
 	outline:0;
+}
+p {
+  font-family: 'Karma', serif;
+  font-size: 14px;
 }
 
 
