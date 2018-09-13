@@ -1,0 +1,44 @@
+.container {
+  padding: 0px;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.container {
+	width: 100%;
+}
+
+button:focus {
+	outline:0;
+}
+p {
+  font-family: $serif;
+  font-size: 16px;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: $sans-serif;
+  padding: 0px;
+}
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #3C4240
+}
+
+@mixin breakpoint($param1, $param2) {
+  $statement: '#{$param1}:#{$param2}';
+  @media screen and ($statement) {
+    @content;
+  }
+}

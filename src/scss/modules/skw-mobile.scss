@@ -1,0 +1,79 @@
+.hidden-lg {
+	display: block;
+	@include breakpoint(min-width, $screen-lg) {
+    	display: none;
+  	}
+}
+
+.image {
+	height: 50px;
+	overflow: hidden;
+	transform: skewY(-15deg) translateY(-10px);
+}
+
+.skw-mobile {
+  background: #3C4240;
+  background-size: cover;
+  position:absolute;
+  top:8px;
+  width:100%;
+  transition:top 0.4s;
+  height: 200%;
+
+  &__slice {
+  	height:300px;
+  	transform: skewY(-15deg) translateY(-10px);
+  	background:red;
+  	transition:height 0.4s;
+  	& h2 {
+  		height: 28%;
+  		display:block;
+  		text-transform: uppercase;
+  		transform: skewY(15deg) translateY(10px);
+  		text-align:center;
+  		font-size:2.5em;
+  		line-height: 250px;
+  		color:white;
+  		font-family: $sans-serif;
+  		margin: 0px;
+  	}
+  	&:nth-child(1){
+  		background-color: $green;
+  		height:565px;
+  		& img {
+  			transform: skewY(15deg) translateY(10px);
+  			display: block;
+    		margin: auto;
+  		}
+	}
+	&:nth-child(2){
+  		background-color: $rust;
+	}
+	&:nth-child(3){
+  		background-color: $yellow;
+	}
+	&:nth-child(4){
+  		background-color: $red;
+	}
+	&:nth-child(5){
+  		background-color: $blue;
+	}
+  }
+}
+
+
+.selected{
+  height:665px;
+}
+
+.second-selected{
+  top:-158px;
+}
+
+.third-selected{
+  top:-323px;
+}
+
+.fourth-selected{
+  top:-490px;
+}

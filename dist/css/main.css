@@ -1,0 +1,332 @@
+/* line 1, src/scss/modules/base.scss */
+.container {
+  padding: 0px; }
+
+/* line 5, src/scss/modules/base.scss */
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+
+/* line 11, src/scss/modules/base.scss */
+.container {
+  width: 100%; }
+
+/* line 15, src/scss/modules/base.scss */
+button:focus {
+  outline: 0; }
+
+/* line 18, src/scss/modules/base.scss */
+p {
+  font-family: Karma, Georgia, "Times New Roman", Times, serif;
+  font-size: 16px; }
+
+/* line 22, src/scss/modules/base.scss */
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Lato", sans-serif;
+  padding: 0px; }
+
+/* line 29, src/scss/modules/base.scss */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+/* line 35, src/scss/modules/base.scss */
+body {
+  background: #3C4240; }
+
+/* line 2, src/scss/modules/button.scss */
+button {
+  padding: 20px 40px 10px 40px;
+  background: none;
+  border: none;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 3px;
+  cursor: pointer; }
+  /* line 11, src/scss/modules/button.scss */
+  button:after, button:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border: 2px solid #fff;
+    -webkit-transition: -webkit-transform .2s;
+    transition: -webkit-transform .2s;
+    transition: transform .2s;
+    transition: transform .2s, -webkit-transform .2s; }
+  /* line 21, src/scss/modules/button.scss */
+  button:after {
+    -webkit-transform: translate(3px, 3px);
+            transform: translate(3px, 3px); }
+  /* line 24, src/scss/modules/button.scss */
+  button:before {
+    -webkit-transform: translate(-3px, -3px);
+            transform: translate(-3px, -3px); }
+  /* line 28, src/scss/modules/button.scss */
+  button:hover:after, button:hover:before {
+    -webkit-transform: translate(0);
+            transform: translate(0); }
+
+/* line 1, src/scss/modules/skw-pages.scss */
+.hidden-md {
+  display: none; }
+  @media screen and (min-width: 992px) {
+    /* line 1, src/scss/modules/skw-pages.scss */
+    .hidden-md {
+      display: block; } }
+
+/* line 8, src/scss/modules/skw-pages.scss */
+.wordcloud {
+  padding: 0px !important; }
+
+/* line 11, src/scss/modules/skw-pages.scss */
+.wordcloud img {
+  height: 100% !important; }
+
+/* line 14, src/scss/modules/skw-pages.scss */
+.skw-pages {
+  overflow: hidden;
+  position: relative;
+  height: 100vh; }
+
+/* line 24, src/scss/modules/skw-pages.scss */
+.skw-page {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%; }
+  /* line 55, src/scss/modules/skw-pages.scss */
+  .skw-page__half {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100vh;
+    -webkit-transition: -webkit-transform 1s;
+    transition: -webkit-transform 1s;
+    transition: transform 1s;
+    transition: transform 1s, -webkit-transform 1s;
+    z-index: 2; }
+    /* line 63, src/scss/modules/skw-pages.scss */
+    .skw-page__half--left {
+      left: 0;
+      -webkit-transform: translate3d(-32.4vh, 100%, 0);
+              transform: translate3d(-32.4vh, 100%, 0); }
+    /* line 68, src/scss/modules/skw-pages.scss */
+    .skw-page__half--right {
+      left: 50%;
+      -webkit-transform: translate3d(32.4vh, -100%, 0);
+              transform: translate3d(32.4vh, -100%, 0); }
+    /* line 73, src/scss/modules/skw-pages.scss */
+    .skw-page.active .skw-page__half {
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0); }
+  /* line 78, src/scss/modules/skw-pages.scss */
+  .skw-page__skewed {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 140%;
+    height: 100%;
+    -webkit-transform: skewX(-18deg);
+            transform: skewX(-18deg);
+    background: #000; }
+    /* line 87, src/scss/modules/skw-pages.scss */
+    .skw-page__half--left .skw-page__skewed {
+      left: -40%; }
+    /* line 90, src/scss/modules/skw-pages.scss */
+    .skw-page__half--right .skw-page__skewed {
+      right: -40%; }
+  /* line 95, src/scss/modules/skw-pages.scss */
+  .skw-page__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0 30%;
+    color: #fff;
+    -webkit-transform: skewX(18deg);
+            transform: skewX(18deg);
+    -webkit-transition: opacity 1s, -webkit-transform 1s;
+    transition: opacity 1s, -webkit-transform 1s;
+    transition: transform 1s, opacity 1s;
+    transition: transform 1s, opacity 1s, -webkit-transform 1s;
+    background-size: cover; }
+    /* line 111, src/scss/modules/skw-pages.scss */
+    .skw-page__content img {
+      width: auto;
+      height: 33%; }
+    /* line 116, src/scss/modules/skw-pages.scss */
+    .skw-page__half--left .skw-page__content {
+      padding-left: 30%;
+      padding-right: 30%;
+      -webkit-transform-origin: 100% 0;
+              transform-origin: 100% 0; }
+    /* line 121, src/scss/modules/skw-pages.scss */
+    .skw-page__half--right .skw-page__content {
+      padding-left: 30%;
+      padding-right: 30%;
+      -webkit-transform-origin: 0 100%;
+              transform-origin: 0 100%; }
+    /* line 127, src/scss/modules/skw-pages.scss */
+    .skw-page.inactive .skw-page__content {
+      opacity: 0.5;
+      -webkit-transform: skewX(18deg) scale(0.95);
+              transform: skewX(18deg) scale(0.95); }
+  /* line 133, src/scss/modules/skw-pages.scss */
+  .skw-page__heading {
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-size: 55px;
+    text-align: center; }
+  /* line 140, src/scss/modules/skw-pages.scss */
+  .skw-page__description {
+    font-size: 30px;
+    text-align: center; }
+    /* line 145, src/scss/modules/skw-pages.scss */
+    .skw-page__description-icon a > img {
+      width: auto;
+      height: 40px;
+      display: inline;
+      margin: 10px; }
+  /* line 154, src/scss/modules/skw-pages.scss */
+  .skw-page__link {
+    color: #FFA0A0; }
+  /* line 159, src/scss/modules/skw-pages.scss */
+  .skw-page-1 .skw-page__half--left .skw-page__content {
+    background: #0A242E; }
+  /* line 164, src/scss/modules/skw-pages.scss */
+  .skw-page-1 .skw-page__half--right .skw-page__content {
+    background: #756729; }
+  /* line 169, src/scss/modules/skw-pages.scss */
+  .skw-page-2 .skw-page__half--left .skw-page__content {
+    background: #AA5B17; }
+  /* line 172, src/scss/modules/skw-pages.scss */
+  .skw-page-2 .skw-page__half--right .skw-page__content {
+    background-image: url("https://s3.us-east-2.amazonaws.com/raina-website/projectsbg.png"); }
+  /* line 177, src/scss/modules/skw-pages.scss */
+  .skw-page-3 .skw-page__half--left .skw-page__content {
+    background-image: url("https://s3.us-east-2.amazonaws.com/raina-website/motbHR.jpg"); }
+  /* line 180, src/scss/modules/skw-pages.scss */
+  .skw-page-3 .skw-page__half--right .skw-page__content {
+    background: #db9501; }
+  /* line 185, src/scss/modules/skw-pages.scss */
+  .skw-page-4 .skw-page__half--left .skw-page__content {
+    background: #791F0B; }
+  /* line 188, src/scss/modules/skw-pages.scss */
+  .skw-page-4 .skw-page__half--right .skw-page__content {
+    background-image: url("https://s3.us-east-2.amazonaws.com/raina-website/me.jpg"); }
+  /* line 193, src/scss/modules/skw-pages.scss */
+  .skw-page-5 .skw-page__half--left .skw-page__content {
+    background-image: url("https://s3.us-east-2.amazonaws.com/raina-website/black-vintage-telephone.jpg"); }
+  /* line 196, src/scss/modules/skw-pages.scss */
+  .skw-page-5 .skw-page__half--right .skw-page__content {
+    background: #0A242E; }
+
+/* line 1, src/scss/modules/skw-mobile.scss */
+.hidden-lg {
+  display: block; }
+  @media screen and (min-width: 1260px) {
+    /* line 1, src/scss/modules/skw-mobile.scss */
+    .hidden-lg {
+      display: none; } }
+
+/* line 8, src/scss/modules/skw-mobile.scss */
+.image {
+  height: 50px;
+  overflow: hidden;
+  -webkit-transform: skewY(-15deg) translateY(-10px);
+          transform: skewY(-15deg) translateY(-10px); }
+
+/* line 14, src/scss/modules/skw-mobile.scss */
+.skw-mobile {
+  background: #3C4240;
+  background-size: cover;
+  position: absolute;
+  top: 8px;
+  width: 100%;
+  -webkit-transition: top 0.4s;
+  transition: top 0.4s;
+  height: 200%; }
+  /* line 23, src/scss/modules/skw-mobile.scss */
+  .skw-mobile__slice {
+    height: 300px;
+    -webkit-transform: skewY(-15deg) translateY(-10px);
+            transform: skewY(-15deg) translateY(-10px);
+    background: red;
+    -webkit-transition: height 0.4s;
+    transition: height 0.4s; }
+    /* line 28, src/scss/modules/skw-mobile.scss */
+    .skw-mobile__slice h2 {
+      height: 28%;
+      display: block;
+      text-transform: uppercase;
+      -webkit-transform: skewY(15deg) translateY(10px);
+              transform: skewY(15deg) translateY(10px);
+      text-align: center;
+      font-size: 2.5em;
+      line-height: 250px;
+      color: white;
+      font-family: "Lato", sans-serif;
+      margin: 0px; }
+    /* line 40, src/scss/modules/skw-mobile.scss */
+    .skw-mobile__slice:nth-child(1) {
+      background-color: #756729;
+      height: 565px; }
+      /* line 43, src/scss/modules/skw-mobile.scss */
+      .skw-mobile__slice:nth-child(1) img {
+        -webkit-transform: skewY(15deg) translateY(10px);
+                transform: skewY(15deg) translateY(10px);
+        display: block;
+        margin: auto; }
+    /* line 49, src/scss/modules/skw-mobile.scss */
+    .skw-mobile__slice:nth-child(2) {
+      background-color: #AA5B17; }
+    /* line 52, src/scss/modules/skw-mobile.scss */
+    .skw-mobile__slice:nth-child(3) {
+      background-color: #db9501; }
+    /* line 55, src/scss/modules/skw-mobile.scss */
+    .skw-mobile__slice:nth-child(4) {
+      background-color: #791F0B; }
+    /* line 58, src/scss/modules/skw-mobile.scss */
+    .skw-mobile__slice:nth-child(5) {
+      background-color: #0A242E; }
+
+/* line 65, src/scss/modules/skw-mobile.scss */
+.selected {
+  height: 665px; }
+
+/* line 69, src/scss/modules/skw-mobile.scss */
+.second-selected {
+  top: -158px; }
+
+/* line 73, src/scss/modules/skw-mobile.scss */
+.third-selected {
+  top: -323px; }
+
+/* line 77, src/scss/modules/skw-mobile.scss */
+.fourth-selected {
+  top: -490px; }
