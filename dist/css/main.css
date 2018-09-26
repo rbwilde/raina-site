@@ -100,34 +100,37 @@ button {
             transform: translate(0); }
   /* line 32, src/scss/modules/button.scss */
   button p {
-    color: #ffffff !important; }
+    color: #ffffff !important;
+    font-family: Karma, Georgia, "Times New Roman", Times, serif;
+    font-size: 16px;
+    font-weight: 900; }
 
-/* line 37, src/scss/modules/button.scss */
+/* line 40, src/scss/modules/button.scss */
 textarea, select, input, button, .btn, .btn-primary {
   outline: none; }
 
-/* line 41, src/scss/modules/button.scss */
+/* line 44, src/scss/modules/button.scss */
 .btn {
   padding: 20px 40px 10px 40px; }
 
-/* line 45, src/scss/modules/button.scss */
+/* line 48, src/scss/modules/button.scss */
 button.close {
   padding: 4px 10px 10px 10px; }
 
-/* line 49, src/scss/modules/button.scss */
+/* line 52, src/scss/modules/button.scss */
 .hover {
   max-height: 0;
   -webkit-transition: max-height 0.5s ease-out;
   transition: max-height 0.5s ease-out;
   overflow: hidden; }
 
-/* line 55, src/scss/modules/button.scss */
+/* line 58, src/scss/modules/button.scss */
 .dropdown:hover .hover {
   max-height: 100px;
   -webkit-transition: max-height 0.75s ease-in;
   transition: max-height 0.75s ease-in; }
 
-/* line 60, src/scss/modules/button.scss */
+/* line 63, src/scss/modules/button.scss */
 .drop {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -139,7 +142,7 @@ button.close {
       -ms-flex-pack: center;
           justify-content: center; }
 
-/* line 66, src/scss/modules/button.scss */
+/* line 69, src/scss/modules/button.scss */
 .visit {
   display: -webkit-box;
   display: -ms-flexbox;
