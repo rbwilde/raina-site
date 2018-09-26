@@ -257,11 +257,11 @@ button.close {
     width: inherit;
     height: 100%;
     background-color: rgba(10, 36, 46, 0.9);
-    left: -550px;
+    left: -600px;
     top: 0px;
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out; }
-    /* line 124, src/scss/modules/modal.scss */
+    /* line 109, src/scss/modules/modal.scss */
     .card-image .card-reveal p {
       color: white;
       font-family: "Lato", sans-serif;

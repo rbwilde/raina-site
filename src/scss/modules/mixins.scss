@@ -20,3 +20,10 @@ $container-max-widths: (
   lg: 960px,
   xl: 1140px
 );
+
+@mixin breakpoint($param1, $param2) {
+  $statement: '#{$param1}:#{$param2}';
+  @media screen and ($statement) {
+    @content;
+  }
+}
