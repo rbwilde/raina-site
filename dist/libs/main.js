@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+// DESKTOP
+
   var curPage = 1;
   var numOfPages = $(".skw-page").length;
   var animTime = 1000;
@@ -61,12 +63,19 @@ $(document).ready(function() {
   //     console.log("don't expand me");
   //   }
   // })
-  $("button").on("click", function() {
-    console.log("click!")
-  })
+
+// MOBILE
+// Need to removed selected if another slice is selected
+// Add hide and show affect
+
+  // $("button").on("click", function() {
+  //   console.log("click!")
+  // })
+  $(".skw-mobile__slice-container").hide();
 
   $(".skw-mobile__slice").click(function(){
   $(this).toggleClass("selected");
+  $(this).find(".skw-mobile__slice-container").toggle();
   if($('.skw-mobile__slice').index(this) == 1){
     $(".skw-mobile").toggleClass("second-selected");
   }

@@ -1,8 +1,8 @@
 
 button {
   padding: 20px 40px 10px 40px;
-  background: none;
-  border: none;
+  background: none !important;
+  border: none !important;
   position: relative;
   text-transform: uppercase;
   font-weight: bold;
@@ -29,4 +29,43 @@ button {
       transform: translate(0);
     }
   }
+  & p {
+    color: $white !important;
+  }
 }
+
+textarea, select, input, button, .btn, .btn-primary { 
+  outline: none;
+}
+
+.btn{
+  padding: 20px 40px 10px 40px;
+}
+
+button.close{
+  padding: 4px 10px 10px 10px;
+}
+
+.hover{
+  max-height: 0;
+  transition: max-height 0.5s ease-out;
+  overflow: hidden;
+}
+
+.dropdown:hover .hover{
+  max-height: 100px;
+  transition: max-height 0.75s ease-in; 
+}
+
+.drop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.visit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+

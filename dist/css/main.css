@@ -20,9 +20,31 @@ button:focus {
 /* line 18, src/scss/modules/base.scss */
 p {
   font-family: Karma, Georgia, "Times New Roman", Times, serif;
-  font-size: 16px; }
+  font-size: 16px;
+  color: white; }
 
-/* line 22, src/scss/modules/base.scss */
+/* line 23, src/scss/modules/base.scss */
+h5 {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  color: white; }
+
+/* line 29, src/scss/modules/base.scss */
+h6 {
+  font-family: Karma, Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
+  font-weight: 900;
+  color: #777777; }
+
+/* line 35, src/scss/modules/base.scss */
+h4 {
+  font-family: Karma, Georgia, "Times New Roman", Times, serif;
+  font-size: 16px;
+  font-weight: 900;
+  color: whitesmoke; }
+
+/* line 41, src/scss/modules/base.scss */
 h1,
 h2,
 h3,
@@ -30,22 +52,22 @@ h4 {
   font-family: "Lato", sans-serif;
   padding: 0px; }
 
-/* line 29, src/scss/modules/base.scss */
+/* line 48, src/scss/modules/base.scss */
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
   padding: 0; }
 
-/* line 35, src/scss/modules/base.scss */
+/* line 54, src/scss/modules/base.scss */
 body {
   background: #3C4240; }
 
 /* line 2, src/scss/modules/button.scss */
 button {
   padding: 20px 40px 10px 40px;
-  background: none;
-  border: none;
+  background: none !important;
+  border: none !important;
   position: relative;
   text-transform: uppercase;
   font-weight: bold;
@@ -76,6 +98,174 @@ button {
   button:hover:after, button:hover:before {
     -webkit-transform: translate(0);
             transform: translate(0); }
+  /* line 32, src/scss/modules/button.scss */
+  button p {
+    color: #ffffff !important; }
+
+/* line 37, src/scss/modules/button.scss */
+textarea, select, input, button, .btn, .btn-primary {
+  outline: none; }
+
+/* line 41, src/scss/modules/button.scss */
+.btn {
+  padding: 20px 40px 10px 40px; }
+
+/* line 45, src/scss/modules/button.scss */
+button.close {
+  padding: 4px 10px 10px 10px; }
+
+/* line 49, src/scss/modules/button.scss */
+.hover {
+  max-height: 0;
+  -webkit-transition: max-height 0.5s ease-out;
+  transition: max-height 0.5s ease-out;
+  overflow: hidden; }
+
+/* line 55, src/scss/modules/button.scss */
+.dropdown:hover .hover {
+  max-height: 100px;
+  -webkit-transition: max-height 0.75s ease-in;
+  transition: max-height 0.75s ease-in; }
+
+/* line 60, src/scss/modules/button.scss */
+.drop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+/* line 66, src/scss/modules/button.scss */
+.visit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+/* line 1, src/scss/modules/modal.scss */
+.modal {
+  padding-left: 0 !important;
+  width: 100vw; }
+  /* line 5, src/scss/modules/modal.scss */
+  .modal .modal-full {
+    width: 100vw;
+    margin: 0; }
+    /* line 9, src/scss/modules/modal.scss */
+    .modal .modal-full .modal-content {
+      height: 100vh;
+      overflow-y: auto; }
+  /* line 15, src/scss/modules/modal.scss */
+  .modal .modal-content {
+    height: 100vh;
+    overflow-y: auto;
+    border-radius: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #db9501; }
+    /* line 23, src/scss/modules/modal.scss */
+    .modal .modal-content .modal-header {
+      -webkit-box-flex: 0;
+          -ms-flex: none;
+              flex: none;
+      border-bottom: none !important;
+      padding: 40px; }
+      /* line 28, src/scss/modules/modal.scss */
+      .modal .modal-content .modal-header button.close {
+        font-size: 30px; }
+      /* line 32, src/scss/modules/modal.scss */
+      .modal .modal-content .modal-header .modal-title {
+        line-height: 48px;
+        font-weight: 600; }
+    /* line 38, src/scss/modules/modal.scss */
+    .modal .modal-content .modal-body {
+      width: 100vw;
+      -webkit-box-flex: 1;
+          -ms-flex: 1 0 auto;
+              flex: 1 0 auto; }
+    /* line 43, src/scss/modules/modal.scss */
+    .modal .modal-content .modal-body_container {
+      display: inline-block;
+      margin-right: auto;
+      margin-left: auto;
+      padding: 5% 10% 10% 10%; }
+      /* line 49, src/scss/modules/modal.scss */
+      .modal .modal-content .modal-body_container h2 {
+        color: white;
+        text-align: center; }
+    /* line 55, src/scss/modules/modal.scss */
+    .modal .modal-content .modal-body_container img {
+      width: 100%; }
+    /* line 59, src/scss/modules/modal.scss */
+    .modal .modal-content .modal-footer {
+      -webkit-box-flex: 0;
+          -ms-flex: none;
+              flex: none;
+      text-align: center; }
+      /* line 63, src/scss/modules/modal.scss */
+      .modal .modal-content .modal-footer .btn {
+        margin: 0 7px; }
+
+/* line 70, src/scss/modules/modal.scss */
+.modal-dialog {
+  position: fixed;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0; }
+
+/* line 78, src/scss/modules/modal.scss */
+.close {
+  opacity: 1;
+  color: white;
+  position: absolute;
+  right: 3%; }
+  /* line 83, src/scss/modules/modal.scss */
+  .close:hover {
+    color: #ffffff !important;
+    opacity: 1; }
+
+/* line 89, src/scss/modules/modal.scss */
+.card-image {
+  border: 10px solid #ffffff;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden; }
+  /* line 96, src/scss/modules/modal.scss */
+  .card-image:hover .card-reveal {
+    left: 0; }
+  /* line 99, src/scss/modules/modal.scss */
+  .card-image .card-reveal {
+    padding: 10px;
+    margin: 0 auto;
+    position: absolute;
+    width: inherit;
+    height: 100%;
+    background-color: rgba(10, 36, 46, 0.9);
+    left: -550px;
+    top: 0px;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out; }
+    /* line 124, src/scss/modules/modal.scss */
+    .card-image .card-reveal p {
+      color: white;
+      font-family: "Lato", sans-serif;
+      font-size: 14px; }
 
 /* line 1, src/scss/modules/skw-pages.scss */
 .hidden-md {
@@ -105,7 +295,13 @@ button {
   left: 0;
   top: 0;
   width: 100%; }
-  /* line 55, src/scss/modules/skw-pages.scss */
+  /* line 54, src/scss/modules/skw-pages.scss */
+  .skw-page_button {
+    font-family: "Lato", sans-serif !important;
+    text-align: center;
+    padding-top: 12px;
+    font-size: 14px; }
+  /* line 61, src/scss/modules/skw-pages.scss */
   .skw-page__half {
     position: absolute;
     top: 0;
@@ -116,21 +312,21 @@ button {
     transition: transform 1s;
     transition: transform 1s, -webkit-transform 1s;
     z-index: 2; }
-    /* line 63, src/scss/modules/skw-pages.scss */
+    /* line 69, src/scss/modules/skw-pages.scss */
     .skw-page__half--left {
       left: 0;
       -webkit-transform: translate3d(-32.4vh, 100%, 0);
               transform: translate3d(-32.4vh, 100%, 0); }
-    /* line 68, src/scss/modules/skw-pages.scss */
+    /* line 74, src/scss/modules/skw-pages.scss */
     .skw-page__half--right {
       left: 50%;
       -webkit-transform: translate3d(32.4vh, -100%, 0);
               transform: translate3d(32.4vh, -100%, 0); }
-    /* line 73, src/scss/modules/skw-pages.scss */
+    /* line 79, src/scss/modules/skw-pages.scss */
     .skw-page.active .skw-page__half {
       -webkit-transform: translate3d(0, 0, 0);
               transform: translate3d(0, 0, 0); }
-  /* line 78, src/scss/modules/skw-pages.scss */
+  /* line 84, src/scss/modules/skw-pages.scss */
   .skw-page__skewed {
     overflow: hidden;
     position: absolute;
@@ -140,13 +336,13 @@ button {
     -webkit-transform: skewX(-18deg);
             transform: skewX(-18deg);
     background: #000; }
-    /* line 87, src/scss/modules/skw-pages.scss */
+    /* line 93, src/scss/modules/skw-pages.scss */
     .skw-page__half--left .skw-page__skewed {
       left: -40%; }
-    /* line 90, src/scss/modules/skw-pages.scss */
+    /* line 96, src/scss/modules/skw-pages.scss */
     .skw-page__half--right .skw-page__skewed {
       right: -40%; }
-  /* line 95, src/scss/modules/skw-pages.scss */
+  /* line 101, src/scss/modules/skw-pages.scss */
   .skw-page__content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -175,74 +371,74 @@ button {
     transition: transform 1s, opacity 1s;
     transition: transform 1s, opacity 1s, -webkit-transform 1s;
     background-size: cover; }
-    /* line 111, src/scss/modules/skw-pages.scss */
+    /* line 117, src/scss/modules/skw-pages.scss */
     .skw-page__content img {
       width: auto;
       height: 33%; }
-    /* line 116, src/scss/modules/skw-pages.scss */
+    /* line 122, src/scss/modules/skw-pages.scss */
     .skw-page__half--left .skw-page__content {
       padding-left: 30%;
       padding-right: 30%;
       -webkit-transform-origin: 100% 0;
               transform-origin: 100% 0; }
-    /* line 121, src/scss/modules/skw-pages.scss */
+    /* line 127, src/scss/modules/skw-pages.scss */
     .skw-page__half--right .skw-page__content {
       padding-left: 30%;
       padding-right: 30%;
       -webkit-transform-origin: 0 100%;
               transform-origin: 0 100%; }
-    /* line 127, src/scss/modules/skw-pages.scss */
+    /* line 133, src/scss/modules/skw-pages.scss */
     .skw-page.inactive .skw-page__content {
       opacity: 0.5;
       -webkit-transform: skewX(18deg) scale(0.95);
               transform: skewX(18deg) scale(0.95); }
-  /* line 133, src/scss/modules/skw-pages.scss */
+  /* line 139, src/scss/modules/skw-pages.scss */
   .skw-page__heading {
     margin-bottom: 15px;
     text-transform: uppercase;
     font-size: 55px;
     text-align: center; }
-  /* line 140, src/scss/modules/skw-pages.scss */
+  /* line 146, src/scss/modules/skw-pages.scss */
   .skw-page__description {
     font-size: 30px;
     text-align: center; }
-    /* line 145, src/scss/modules/skw-pages.scss */
+    /* line 151, src/scss/modules/skw-pages.scss */
     .skw-page__description-icon a > img {
       width: auto;
-      height: 40px;
+      max-height: 40px;
       display: inline;
-      margin: 10px; }
-  /* line 154, src/scss/modules/skw-pages.scss */
+      margin: 16px; }
+  /* line 161, src/scss/modules/skw-pages.scss */
   .skw-page__link {
     color: #FFA0A0; }
-  /* line 159, src/scss/modules/skw-pages.scss */
+  /* line 166, src/scss/modules/skw-pages.scss */
   .skw-page-1 .skw-page__half--left .skw-page__content {
     background: #0A242E; }
-  /* line 164, src/scss/modules/skw-pages.scss */
+  /* line 171, src/scss/modules/skw-pages.scss */
   .skw-page-1 .skw-page__half--right .skw-page__content {
     background: #756729; }
-  /* line 169, src/scss/modules/skw-pages.scss */
+  /* line 176, src/scss/modules/skw-pages.scss */
   .skw-page-2 .skw-page__half--left .skw-page__content {
     background: #AA5B17; }
-  /* line 172, src/scss/modules/skw-pages.scss */
+  /* line 179, src/scss/modules/skw-pages.scss */
   .skw-page-2 .skw-page__half--right .skw-page__content {
     background-image: url("https://s3.us-east-2.amazonaws.com/raina-website/projectsbg.png"); }
-  /* line 177, src/scss/modules/skw-pages.scss */
+  /* line 184, src/scss/modules/skw-pages.scss */
   .skw-page-3 .skw-page__half--left .skw-page__content {
     background-image: url("https://s3.us-east-2.amazonaws.com/raina-website/motbHR.jpg"); }
-  /* line 180, src/scss/modules/skw-pages.scss */
+  /* line 187, src/scss/modules/skw-pages.scss */
   .skw-page-3 .skw-page__half--right .skw-page__content {
     background: #db9501; }
-  /* line 185, src/scss/modules/skw-pages.scss */
+  /* line 192, src/scss/modules/skw-pages.scss */
   .skw-page-4 .skw-page__half--left .skw-page__content {
     background: #791F0B; }
-  /* line 188, src/scss/modules/skw-pages.scss */
+  /* line 195, src/scss/modules/skw-pages.scss */
   .skw-page-4 .skw-page__half--right .skw-page__content {
     background-image: url("https://s3.us-east-2.amazonaws.com/raina-website/me.jpg"); }
-  /* line 193, src/scss/modules/skw-pages.scss */
+  /* line 200, src/scss/modules/skw-pages.scss */
   .skw-page-5 .skw-page__half--left .skw-page__content {
     background-image: url("https://s3.us-east-2.amazonaws.com/raina-website/black-vintage-telephone.jpg"); }
-  /* line 196, src/scss/modules/skw-pages.scss */
+  /* line 203, src/scss/modules/skw-pages.scss */
   .skw-page-5 .skw-page__half--right .skw-page__content {
     background: #0A242E; }
 
@@ -255,13 +451,18 @@ button {
       display: none; } }
 
 /* line 8, src/scss/modules/skw-mobile.scss */
+.container-fluid {
+  padding-left: 0px;
+  padding-right: 0px; }
+
+/* line 13, src/scss/modules/skw-mobile.scss */
 .image {
   height: 50px;
   overflow: hidden;
   -webkit-transform: skewY(-15deg) translateY(-10px);
           transform: skewY(-15deg) translateY(-10px); }
 
-/* line 14, src/scss/modules/skw-mobile.scss */
+/* line 23, src/scss/modules/skw-mobile.scss */
 .skw-mobile {
   background: #3C4240;
   background-size: cover;
@@ -271,17 +472,51 @@ button {
   -webkit-transition: top 0.4s;
   transition: top 0.4s;
   height: 200%; }
-  /* line 23, src/scss/modules/skw-mobile.scss */
+  /* line 32, src/scss/modules/skw-mobile.scss */
+  .skw-mobile__description {
+    font-size: 30px;
+    text-align: center; }
+    /* line 37, src/scss/modules/skw-mobile.scss */
+    .skw-mobile__description-icon a > img {
+      width: auto;
+      max-height: 70px;
+      margin: 16px;
+      display: block;
+      margin-right: auto;
+      margin-left: auto; }
+  /* line 48, src/scss/modules/skw-mobile.scss */
   .skw-mobile__slice {
-    height: 300px;
+    height: 250px;
     -webkit-transform: skewY(-15deg) translateY(-10px);
             transform: skewY(-15deg) translateY(-10px);
     background: red;
     -webkit-transition: height 0.4s;
     transition: height 0.4s; }
-    /* line 28, src/scss/modules/skw-mobile.scss */
+    /* line 53, src/scss/modules/skw-mobile.scss */
+    .skw-mobile__slice-container {
+      -webkit-transform: skewY(15deg) translateY(10px);
+              transform: skewY(15deg) translateY(10px);
+      padding: 60px 20px 40px 20px; }
+      /* line 56, src/scss/modules/skw-mobile.scss */
+      .skw-mobile__slice-container-button {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; }
+      /* line 61, src/scss/modules/skw-mobile.scss */
+      .skw-mobile__slice-container-buttondesc {
+        margin-top: 20px;
+        padding: 12px;
+        background-color: #db9501;
+        border: 1px solid #ffffff; }
+    /* line 68, src/scss/modules/skw-mobile.scss */
     .skw-mobile__slice h2 {
-      height: 28%;
+      height: 170px;
       display: block;
       text-transform: uppercase;
       -webkit-transform: skewY(15deg) translateY(10px);
@@ -292,41 +527,29 @@ button {
       color: white;
       font-family: "Lato", sans-serif;
       margin: 0px; }
-    /* line 40, src/scss/modules/skw-mobile.scss */
+    /* line 80, src/scss/modules/skw-mobile.scss */
     .skw-mobile__slice:nth-child(1) {
       background-color: #756729;
       height: 565px; }
-      /* line 43, src/scss/modules/skw-mobile.scss */
+      /* line 83, src/scss/modules/skw-mobile.scss */
       .skw-mobile__slice:nth-child(1) img {
         -webkit-transform: skewY(15deg) translateY(10px);
                 transform: skewY(15deg) translateY(10px);
         display: block;
         margin: auto; }
-    /* line 49, src/scss/modules/skw-mobile.scss */
+    /* line 89, src/scss/modules/skw-mobile.scss */
     .skw-mobile__slice:nth-child(2) {
       background-color: #AA5B17; }
-    /* line 52, src/scss/modules/skw-mobile.scss */
+    /* line 92, src/scss/modules/skw-mobile.scss */
     .skw-mobile__slice:nth-child(3) {
       background-color: #db9501; }
-    /* line 55, src/scss/modules/skw-mobile.scss */
+    /* line 95, src/scss/modules/skw-mobile.scss */
     .skw-mobile__slice:nth-child(4) {
       background-color: #791F0B; }
-    /* line 58, src/scss/modules/skw-mobile.scss */
+    /* line 98, src/scss/modules/skw-mobile.scss */
     .skw-mobile__slice:nth-child(5) {
       background-color: #0A242E; }
 
-/* line 65, src/scss/modules/skw-mobile.scss */
+/* line 105, src/scss/modules/skw-mobile.scss */
 .selected {
-  height: 665px; }
-
-/* line 69, src/scss/modules/skw-mobile.scss */
-.second-selected {
-  top: -158px; }
-
-/* line 73, src/scss/modules/skw-mobile.scss */
-.third-selected {
-  top: -323px; }
-
-/* line 77, src/scss/modules/skw-mobile.scss */
-.fourth-selected {
-  top: -490px; }
+  height: 800px; }

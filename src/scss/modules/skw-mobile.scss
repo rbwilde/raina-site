@@ -5,11 +5,20 @@
   	}
 }
 
+.container-fluid {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 .image {
 	height: 50px;
 	overflow: hidden;
 	transform: skewY(-15deg) translateY(-10px);
 }
+
+// .clear { 
+//   clear: both;
+// }
 
 .skw-mobile {
   background: #3C4240;
@@ -19,14 +28,45 @@
   width:100%;
   transition:top 0.4s;
   height: 200%;
+  
+  &__description {
+    font-size: 30px;
+    text-align: center;
+
+    &-icon {
+      & a > img{
+        width: auto;
+        max-height: 70px;
+        margin: 16px;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+      }
+    }
+  }
 
   &__slice {
-  	height:300px;
+  	height:250px;
   	transform: skewY(-15deg) translateY(-10px);
   	background:red;
   	transition:height 0.4s;
+    &-container {
+      transform: skewY(15deg) translateY(10px);
+      padding: 60px 20px 40px 20px;
+      &-button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      &-buttondesc{
+        margin-top: 20px;
+        padding: 12px;
+        background-color: $yellow;
+        border: 1px solid $white;
+      }
+    }
   	& h2 {
-  		height: 28%;
+  		height: 170px;
   		display:block;
   		text-transform: uppercase;
   		transform: skewY(15deg) translateY(10px);
@@ -63,17 +103,17 @@
 
 
 .selected{
-  height:665px;
+  height: 800px;
 }
 
-.second-selected{
-  top:-158px;
-}
+// .second-selected{
+//   top:-158px;
+// }
 
-.third-selected{
-  top:-323px;
-}
+// .third-selected{
+//   top:-323px;
+// }
 
-.fourth-selected{
-  top:-490px;
-}
+// .fourth-selected{
+//   top:-490px;
+// }
