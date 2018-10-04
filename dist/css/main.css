@@ -64,8 +64,7 @@ body {
   background: #3C4240; }
 
 /* line 2, src/scss/modules/button.scss */
-button,
-.button a {
+button {
   background: none !important;
   border: none !important;
   position: relative;
@@ -73,15 +72,15 @@ button,
   font-weight: bold;
   letter-spacing: 3px;
   cursor: pointer;
-  padding: 20px 40px 10px 40px;
-  display: inline-block;
-  width: auto;
-  outline: none;
-  text-decoration: none; }
-  /* line 16, src/scss/modules/button.scss */
-  button:after, button:before,
-  .button a:after,
-  .button a:before {
+  padding: 20px 40px 10px 40px; }
+  /* line 11, src/scss/modules/button.scss */
+  button a {
+    display: inline-block;
+    width: auto;
+    outline: none;
+    text-decoration: none; }
+  /* line 18, src/scss/modules/button.scss */
+  button:after, button:before {
     content: '';
     position: absolute;
     top: 0;
@@ -93,56 +92,51 @@ button,
     transition: -webkit-transform .2s;
     transition: transform .2s;
     transition: transform .2s, -webkit-transform .2s; }
-  /* line 26, src/scss/modules/button.scss */
-  button:after,
-  .button a:after {
+  /* line 28, src/scss/modules/button.scss */
+  button:after {
     -webkit-transform: translate(3px, 3px);
             transform: translate(3px, 3px); }
-  /* line 29, src/scss/modules/button.scss */
-  button:before,
-  .button a:before {
+  /* line 31, src/scss/modules/button.scss */
+  button:before {
     -webkit-transform: translate(-3px, -3px);
             transform: translate(-3px, -3px); }
-  /* line 33, src/scss/modules/button.scss */
-  button:hover:after, button:hover:before,
-  .button a:hover:after,
-  .button a:hover:before {
+  /* line 35, src/scss/modules/button.scss */
+  button:hover:after, button:hover:before {
     -webkit-transform: translate(0);
             transform: translate(0); }
-  /* line 37, src/scss/modules/button.scss */
-  button p,
-  .button a p {
+  /* line 39, src/scss/modules/button.scss */
+  button p {
     color: #ffffff !important;
     font-family: Karma, Georgia, "Times New Roman", Times, serif;
     font-size: 16px;
     font-weight: 900; }
 
-/* line 45, src/scss/modules/button.scss */
+/* line 47, src/scss/modules/button.scss */
 textarea, select, input, button, .btn, .btn-primary {
   outline: none; }
 
-/* line 49, src/scss/modules/button.scss */
+/* line 51, src/scss/modules/button.scss */
 .btn {
   padding: 20px 40px 10px 40px; }
 
-/* line 53, src/scss/modules/button.scss */
+/* line 55, src/scss/modules/button.scss */
 button.close {
   padding: 4px 10px 10px 10px; }
 
-/* line 57, src/scss/modules/button.scss */
+/* line 59, src/scss/modules/button.scss */
 .hover {
   max-height: 0;
   -webkit-transition: max-height 0.5s ease-out;
   transition: max-height 0.5s ease-out;
   overflow: hidden; }
 
-/* line 63, src/scss/modules/button.scss */
+/* line 65, src/scss/modules/button.scss */
 .dropdown:hover .hover {
   max-height: 100px;
   -webkit-transition: max-height 0.75s ease-in;
   transition: max-height 0.75s ease-in; }
 
-/* line 68, src/scss/modules/button.scss */
+/* line 70, src/scss/modules/button.scss */
 .drop {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -154,7 +148,7 @@ button.close {
       -ms-flex-pack: center;
           justify-content: center; }
 
-/* line 74, src/scss/modules/button.scss */
+/* line 76, src/scss/modules/button.scss */
 .visit {
   display: -webkit-box;
   display: -ms-flexbox;

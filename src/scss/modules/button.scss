@@ -1,6 +1,5 @@
 
-button,
-.button a {
+button {
   background: none !important;
   border: none !important;
   position: relative;
@@ -9,10 +8,13 @@ button,
   letter-spacing: 3px;
   cursor: pointer;
   padding: 20px 40px 10px 40px;
-  display:inline-block;
-  width: auto;
-  outline: none;
-  text-decoration: none;
+  & a{
+    display:inline-block;
+    width: auto;
+    outline: none;
+    text-decoration: none;
+  }
+
   &:after, &:before {
     content: '';
     position: absolute;
