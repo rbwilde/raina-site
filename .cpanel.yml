@@ -1,5 +1,4 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/f3uk8gtz84qx/public_html/raina-site/dist
-    - /bin/cp -R * $DEPLOYPATH
+    - export DEPLOYPATH=/home/f3uk8gtz84qx/public_html/raina-site
